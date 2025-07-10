@@ -32,7 +32,39 @@ d) Todas son correctas.
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+a) Sólo I y II
+
+**Propiedades:**
+
+- Una matriz $M$ es simetrica si: $M^T = M$
+- Transpuesta de la suma:
+$$
+(A+B)^T =A^T+B^T
+\quad
+(A−B)^T=A^T−B^T
+$$
+- Traspuesta del producto:
+$$
+(AB)^T=B^TA^T
+$$
+- Transpuesta doble:
+$$
+(A^T)^T=A
+$$
+
+- Todas las matrices simétricas de $𝑛×𝑛$ tienen 𝑛 valores propios reales, pero **no necesariamente distintos**.
+
+**Desarroyo:**
+
+I. $(A-B)^T = (A^T-B^T)$ como $A,B$ simetricas $A^T = A, B^T = B$ entonces $(A^T-B^T) = A-B$ por lo tanto **ES SIMETRICA**
+
+II. $(AB)^T = B^T A^T$  como $A,B$ simetricas $A^T = A, B^T = B$ entonces $ B^T A^T = BA = AB$ por lo tanto **ES SIMETRICA**
+
+III. **FALSA** puede tener valores repetidos.
+
 </div>
 
 :::info

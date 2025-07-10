@@ -1,0 +1,87 @@
+---
+title: Pregunta 9
+---
+
+import Image from "@site/src/components/Image";
+import MDXDetails from "@site/src/components/MDXDetails";
+import Disqus from '@site/src/components/Disqus';
+
+# Pregunta 9
+
+<div className="exercise">
+Considere las siguientes afirmaciones con respecto a las matrices triangulares (y, por lo tanto cuadradas):
+<ol type="I">
+  <li>Toda matriz triangular es invertible.</li>
+  <li>Toda matriz triangular conmuta con su transpuesta.</li>
+  <li>Si una matriz triangular es simétrica, entonces es diagonalizable.</li>
+</ol>
+
+De las afirmaciones anteriores, ¿cuál(es) es(son) **CORRECTA(S)**?
+
+a) Sólo II.
+
+b) Sólo III.
+
+c) I y II.
+
+d) I y III.
+</div>
+
+<MDXDetails>
+<summary>Solución propuesta</summary>
+
+<div className="exercise">
+
+**Respuesta:**
+
+b) Sólo III.
+
+**Propiedades:**
+
+- Una matriz triangular es una matriz cuadrada en la que todos los elementos por encima o por debajo de la diagonal principal son cero.
+
+- Una matriz simétrica (no importa si además es triangular) siempre es diagonalizable (por el teorema espectral).
+
+**Desarroyo:**
+
+I. Solo es invertible si todos los elementos de la diagonal son distintos de 0. Lo mas facil es buscar un contraejemplo simple:
+$$
+\left[\begin{array}{cc}
+1 & 2  \\
+0 & 0
+\end{array}\right]
+$$
+notece que esta matriz no es invertible porque su determinante es 0.
+
+II. Aca tambien hay que probar contraejemplos:
+$$
+A=\left[\begin{array}{cc}
+1 & 1  \\
+0 & 1
+\end{array}\right]
+\quad
+A^T=\left[\begin{array}{cc}
+1 & 0  \\
+A & 1
+\end{array}\right]
+$$
+Este caso no conmuta. $AA^T \neq A^TA$
+
+III. solo por el hecho de ser simetrica es diagonalizable.
+</div>
+
+:::info
+Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
+un Pull Request en el [repositorio](https://github.com/crow-rojas/apuntes-fundamentals/pulls) de GitHub con el archivo
+`.mdx` correspondiente.
+:::
+
+</MDXDetails>
+
+### Comentarios
+
+<Disqus
+  url="https://crow-rojas.github.io/apuntes-fundamentals/docs/mathematics/linear-algebra/exercises/2024-2/p08"
+  identifier="docs/mathematics/linear-algebra/exercises/2024-2/p08"
+  title="2024-2 Álgebra Lineal - Pregunta 08"
+/>
