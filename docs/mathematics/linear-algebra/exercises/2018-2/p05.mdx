@@ -38,7 +38,74 @@ d) $T(p)=7 x^2-2 x+4$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+d) $T(p)=7 x^2-2 x+4$
+
+**Desarroyo:**
+
+Primero devemos expresar $p(x)$ como combinacion lineal de los elementos de $B$.
+$$
+p(x)=a\cdot x^2+b\cdot x+c\cdot(x+2)
+$$
+Expandimos.
+$$
+p(x)=ax^2+bx+c(x+2)=ax^2+bx+cx+2c=ax^2+(b+c)x+2c
+$$
+Y lo igualamos con la ecuacion original.
+$$
+p(x)=ax^2+(b+c)x+2c =x^2−4x+4
+$$
+Entonces:
+$$
+\begin{cases}
+a = 1 \\\\
+b - c = -4\\\\
+2c = 4
+\end{cases}
+\quad \text{entonces} \quad
+\begin{cases}
+a = 1 \\\\
+b = -6\\\\
+c = 2
+\end{cases}
+$$
+
+Por lo tanto en cordenadas de base $B$, el vector $p(x)$.
+$$
+[p(x)]_B =
+\left(\begin{array}{l}
+1 \\
+-6 \\
+2
+\end{array}\right)
+$$
+
+Luego multiplicamos $T_{B \rightarrow B}\cdot [p(x)]_B =$ y nos queda
+
+$$
+T_{B \rightarrow B}\cdot [p(x)]_B =
+\left(\begin{array}{l}
+7 \\
+-4 \\
+2
+\end{array}\right)
+$$
+
+Volvemos a construir el polinomio con el vector.
+
+$$
+T(p)=7\cdot x^2+(−4)\cdot x+2\cdot (x+2)
+$$
+
+Y finalmente expandimos.
+
+$$
+T(p)=7x^2−4x+2x+4=7x^2−2x+4
+$$
+.
+
 </div>
 
 :::info

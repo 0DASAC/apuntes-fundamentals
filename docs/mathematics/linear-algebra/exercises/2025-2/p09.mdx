@@ -31,7 +31,43 @@ d) I y III.
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+b) Sólo III.
+
+**Propiedades:**
+
+- Una matriz triangular es una matriz cuadrada en la que todos los elementos por encima o por debajo de la diagonal principal son cero.
+
+- Una matriz simétrica (no importa si además es triangular) siempre es diagonalizable (por el teorema espectral).
+
+**Desarroyo:**
+
+I. Solo es invertible si todos los elementos de la diagonal son distintos de 0. Lo mas facil es buscar un contraejemplo simple:
+$$
+\left[\begin{array}{cc}
+1 & 2  \\
+0 & 0
+\end{array}\right]
+$$
+notece que esta matriz no es invertible porque su determinante es 0.
+
+II. Aca tambien hay que probar contraejemplos:
+$$
+A=\left[\begin{array}{cc}
+1 & 1  \\
+0 & 1
+\end{array}\right]
+\quad
+A^T=\left[\begin{array}{cc}
+1 & 0  \\
+A & 1
+\end{array}\right]
+$$
+Este caso no conmuta. $AA^T \neq A^TA$
+
+III. solo por el hecho de ser simetrica es diagonalizable.
 </div>
 
 :::info
