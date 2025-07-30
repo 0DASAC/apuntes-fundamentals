@@ -9,7 +9,7 @@ import Disqus from '@site/src/components/Disqus';
 # Pregunta 7
 
 <div className="exercise">
-Considerando la siguiente reacción redox no balanceada 
+Considerando la siguiente reacción redox no balanceada
 
 $$
 \mathrm{Bi}(\mathrm{OH})_3+\mathrm{SnO}_2^{2-} \rightarrow \mathrm{SnO}_3^{2-}+ \mathrm{Bi}
@@ -30,7 +30,86 @@ d) $2 \mathrm{Bi}(\mathrm{OH})_3+3 \mathrm{SnO}_2^{2-} \rightarrow 2 \mathrm{Bi}
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+d) $2 \mathrm{Bi}(\mathrm{OH})_3+3 \mathrm{SnO}_2^{2-} \rightarrow 2 \mathrm{Bi}+3 \mathrm{H}_2 \mathrm{O}+3 \mathrm{SnO}_3^{2-}$
+
+**Desarroyo(por descarte):**
+
+Podemos ir revisando cada alternativa y ver si esta valanciada o no. Es importante recordar que en una ecuacion balanciada no deben haber elctrones libres $(e⁻)$. deben estar balanciados los elementos y las cargas.
+
+a) y la b) Las descartamos altiro porque tienen electrones libres $+2e⁻$.
+
+c) la podesmo descartar ya que no tiene los $H$ valanciados en los reactantes hay 6 y en los productos hay 3.
+
+Por descarte nos queda la d) pero si revisamos ademas notaremos que esta bien valanciada.
+
+**Desarroyo(largo):**
+
+Como algunas respuestas tienen $OH⁻$ y las demas no tienen $H⁺$ podemos intuir que estamos en medio basico.
+
+Lo primero es calcular los estados de occidacion de los elementos.
+
+- $Bi(OH)_3$ el edo de $O= -2$ y el de $H= 1$ por lo que el dedo de $Bi$ nos queda $0 - (-2 +1)\cdot 3 = 3$.
+- $2Bi$ como $Bi$ esta solo y no tiene carga entonces su edo es 0.
+- $SnO_2^{2-}$ como $O = -2$ nos queda que el edo de $Sn$ es $-2 -(-2\cdot 2) = 2$
+- $SnO_3^{2-}$ como $O = -2$ nos queda que el edo de $Sn$ es $-2 -(-2\cdot 3) = 4$
+
+Por lo tanto las semi reacciones nos quedan:
+$$
+SRO: \quad SnO_2^{2-} \rightarrow SnO_3^{2-} + 2e^-
+$$
+$$
+SRR: \quad Bi(OH)_3 + 3e⁻ \rightarrow Bi
+$$
+
+Ahora deveriamos valanciar todo lo que no es $H$ ni $O$. Pero en este caso ya estan valanciados.
+
+Ahora valanciamos los $O$ agregando $H_2O$.
+$$
+SRO: \quad SnO_2^{2-} + H_2O \rightarrow SnO_3^{2-} + 2e^-
+$$
+$$
+SRR: \quad Bi(OH)_3 + 3e⁻ \rightarrow Bi + 3H_2O
+$$
+
+Ahora valanciamos los $H$ agregando $H^+$.
+
+$$
+SRO: \quad SnO_2^{2-} + H_2O \rightarrow SnO_3^{2-} + 2e^- + 2H^+
+$$
+$$
+SRR: \quad Bi(OH)_3 + 3H^+ + 3e⁻ \rightarrow Bi + 3H_2O
+$$
+
+Ahora como estamos en medio BASCO agregamos en hambos lados la misma cantidad que agregamos de $H^+$ pero de $OH⁻$.
+$$
+SRO: \quad SnO_2^{2-} + H_2O + 2OH⁻ \rightarrow SnO_3^{2-} + 2e^- + 2H^+ + 2OH⁻
+$$
+$$
+SRR: \quad Bi(OH)_3 + 3H^+ + 3OH⁻ + 3e⁻ \rightarrow Bi + 3H_2O + 3OH⁻
+$$
+
+Ahora juntamos los $H⁺$ con los $OH⁻$ para formar $H_2O$.
+$$
+SRO: \quad SnO_2^{2-} + H_2O + 2OH⁻ \rightarrow SnO_3^{2-} + 2e^- + 2H_20
+$$
+$$
+SRR: \quad Bi(OH)_3 + 3H_2O + 3e⁻ \rightarrow Bi + 3H_2O + 3OH⁻
+$$
+
+Finalmente poderamos hambas ecuaciones para igualar el numero de $e^-$ y las sumamos (en este caso SRO x 3 y SRR x 2)
+$$
+SRO: \quad 2Bi(OH)_3 + 2SnO_2^{2-} + 9H_2O + 6OH⁻ + 6e⁻ \rightarrow 3Bi + 2SnO_3^{2-} + 6OH⁻ + 6e^- + 12H_20
+$$
+
+Luego simplificamos:
+
+$$
+SRO: \quad 2Bi(OH)_3 + 2SnO_2^{2-} \rightarrow 3Bi + 2SnO_3^{2-} + 3H_20
+$$
+
 </div>
 
 :::info

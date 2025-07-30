@@ -1,0 +1,79 @@
+---
+title: Pregunta 8
+---
+
+import Image from "@site/src/components/Image";
+import MDXDetails from "@site/src/components/MDXDetails";
+import Disqus from '@site/src/components/Disqus';
+
+# Pregunta 8
+
+<div className="exercise">
+Sea $A$ una matriz simétrica. $A$ y $B$ son matrices invertibles. La matriz $M$ se define como:
+$$
+M = (B(A²)^TA^{-1})^{-1}B
+$$
+¿Cuál de las siguientes expresiones es equivalente a la matriz $M$?
+
+a) $A$
+
+b) $A^{-1}$
+
+c) $B^{-1}AB$
+
+d) $B^{-1}A^{-1}B$
+</div>
+
+<MDXDetails>
+<summary>Solución propuesta</summary>
+
+<div className="exercise">
+
+**Respuesta:**
+
+b) $A^{-1}$
+
+**Propiedades:**
+
+Dadas dos matrices $A,B$ invertibles:
+
+- Inversa del producto:
+$$
+(AB)^{-1}=B^{-1}A^{-1}
+$$
+- Multiplicacion por la Inversa:
+$$
+AA^{-1} = I
+$$
+- Una matriz $M$ es simetrica si: $M^T = M$
+
+**Desarroyo:**
+Como A es simetrica:
+$$
+(A^2)^T=(AA)^T=A^TA^T=AA=A^2
+$$
+Asi que:
+$$
+M=(BA^2A^{−1})^{−1} B = (BAAA^{−1})^{−1} B = (BAI)^{−1} B = (BA)^{−1} B
+$$
+Como $A,B$son invertibles:
+$$
+(BA)^{−1} B = A^{-1}B^{-1}B = A^{-1}I = A^{-1}
+$$
+</div>
+
+:::info
+Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
+un Pull Request en el [repositorio](https://github.com/crow-rojas/apuntes-fundamentals/pulls) de GitHub con el archivo
+`.mdx` correspondiente.
+:::
+
+</MDXDetails>
+
+### Comentarios
+
+<Disqus
+  url="https://crow-rojas.github.io/apuntes-fundamentals/docs/mathematics/linear-algebra/exercises/2024-2/p08"
+  identifier="docs/mathematics/linear-algebra/exercises/2024-2/p08"
+  title="2024-2 Álgebra Lineal - Pregunta 08"
+/>

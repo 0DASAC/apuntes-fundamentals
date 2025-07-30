@@ -27,13 +27,57 @@ d) $60,30 \%$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+b) $44,62 \%$
+
+**Desarrollo:**
+
+Lo primero es definin las variables del problema:
+- $L$: Si llueve en un dia.
+- $V$: Si hay fuertes vientos.
+
+Por lo tanto la probabilidad que nos piden es:
+$$
+P(V \cap \overline{L})
+$$
+
+Ademas por enunciado sabemos que:
+- $P(L) = 0,26$
+- $P(V) = 0,48$
+- $P(V | L) = 0,13$
+
+Podemos despejar $P(V \cap L)$ de despejandolo de la siguente formula:
+$$
+P(V|L) = \frac{P(V \cap L)}{P(L)} \quad \text{entonces} \quad P(V \cap L) = P(V|L)\cdot P(L) = 0,13 \cdot 0,26 = 0,0338
+$$
+
+Ahora tenemos que usar lo siguente:
+$$
+P(V\cap \overline{L}) = P(V) - P(V \cap L) \quad \text{entonces} \quad P(V\cap \overline{L}) = 0,48 - 0,0338 = 0,4462 = 44,62\%
+$$
+:::note
+La formula anterior viene de lo siguente:
+$$
+P(V) = P(V \cap L)\cup P(V \cap \overline{L})
+$$
+Como en este caso $P(V \cap L)$ y $P(V \cap \overline{L})$ son disjuntos. Entonces la ecuacion anterior es equivalente a:
+$$
+P(V) = P(V \cap L) + P(V \cap \overline{L})
+$$
+Por lo que podemos pasar restando y llegamos a la ecuacion que queriamos.
+$$
+P(V) - P(V \cap L) = P(V \cap \overline{L})
+$$
+:::
+
 </div>
 
-:::info 
+:::info
 Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
 un Pull Request en el [repositorio](https://github.com/crow-rojas/apuntes-fundamentals/pulls) de GitHub con el archivo
-`.mdx` correspondiente. 
+`.mdx` correspondiente.
 :::
 
 </MDXDetails>

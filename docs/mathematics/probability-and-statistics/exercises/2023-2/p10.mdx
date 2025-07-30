@@ -28,13 +28,40 @@ d) $30 \%$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+b) $6 \%$
+
+**Desarrollo:**
+
+Primero definimos algunas variables:
+- $G$: hay gas.
+- $A$: La prueba indica aucencia de gas.
+
+Por lo tanto del enunciado podesmos sacar que:
+- $P(G) = 0,3$
+- $P(\overline{G}) = 0,7$
+- $P(A|G) = 0,1$
+- $P(A|\overline{G})= 0,7$
+
+Lo que nos estan preguntando es $P(G|A)$, esta la podemos expandir de la siguente forma.
+$$
+P(G|A) = \frac{P(G \cap A)}{P(A)} = \frac{P(A \cap G)}{P(A)} = \frac{P(A|G)\cdot P(G)}{P(A)}
+$$
+Ahora solo nos falta la probabilidad de $A$. Que se puede expresar asi:
+$$
+P(A) = P(A|G)\cdot P(G) + P(A|\overline{G})\cdot P(\overline{G})
+$$
+Esta probabilidad tambien se podria calcular dibujando el arbol y viendo las ramas en donde se marca aucencia de gas.
+
+Ahora que tenemos todo es solo remplasar.
 </div>
 
-:::info 
+:::info
 Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
 un Pull Request en el [repositorio](https://github.com/crow-rojas/apuntes-fundamentals/pulls) de GitHub con el archivo
-`.mdx` correspondiente. 
+`.mdx` correspondiente.
 :::
 
 </MDXDetails>

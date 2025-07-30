@@ -33,7 +33,52 @@ d) $\quad x=-\frac{\left|\begin{array}{ccc}1 & 1 & -2 \\ 1 & 1 & 1 \\ 1 & 0 & 1\
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+a) $x=\frac{\left|\begin{array}{ccc}1 & 1 & -2 \\ 1 & 1 & 1 \\ 1 & 0 & 1\end{array}\right|}{\left|\begin{array}{ccc}0 & 1 & -2 \\ 1 & 1 & 1 \\ -1 & 0 & 1\end{array}\right|}, \quad y=\frac{\left|\begin{array}{ccc}0 & 1 & -2 \\ 1 & 1 & 1 \\ -1 & 1 & 1\end{array}\right|}{\left|\begin{array}{ccc}0 & 1 & -2 \\ 1 & 1 & 1 \\ -1 & 0 & 1\end{array}\right|}, \quad z=\frac{\left|\begin{array}{ccc}0 & 1 & 1 \\ 1 & 1 & 1 \\ -1 & 0 & 1\end{array}\right|}{\left|\begin{array}{ccc}0 & 1 & -2 \\ 1 & 1 & 1 \\ -1 & 0 & 1\end{array}\right|}$
+
+**Desarroyo:**
+
+Lo primero es recordar que para poder usar la regla de cramer se deben cumplir dos condiciones:
+
+- El numero de ecuaciones es igual al numero de variables incognitas.
+- El sistema tiene solucion unica.
+
+La primera condicion es facil de ver que es cierta. La segunda asumimos que es cierta ya que no hay ninguna alternativa que diga que no tiene solucion.
+
+Ahora dado un sistema de ecuaciones de la forma $Ax = b$ con $A$ una matris cuadrada. el denominador es $|A|$ o el determinante de $A$. en este caso:
+$$
+|A|=\left|\begin{array}{lll}
+0 & 1 & -2 \\
+1 & 1 & 1 \\
+-1 & 0 & 1
+\end{array}\right|
+$$
+
+Con esto podemos descartar altiro la alternativa c) porque el denominador en z es distinto a $|A|$.
+
+Ahora para el numerador debemos seguir la siguente regla, por ejemplo si queremos calcular el valor de $x$ tomamos la columna de $A$ que reprecenta $x$(es decir la primera) y la intercambiamos con $b$. luego el numerador es el determinante de esa nueva matris. Nos queda entonces que:
+$$
+x = \frac{
+\left|\begin{array}{lll}
+1 & 1 & -2 \\
+1 & 1 & 1 \\
+1 & 0 & 1
+\end{array}\right|
+
+}
+{
+\left|\begin{array}{lll}
+0 & 1 & -2 \\
+1 & 1 & 1 \\
+-1 & 0 & 1
+\end{array}\right|
+}
+$$
+
+Si seguimos el mismo proceso para las columnas de $y,z$ obtendremos la alternativa a).
+
 </div>
 
 :::info

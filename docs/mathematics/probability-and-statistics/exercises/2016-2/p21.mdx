@@ -28,13 +28,39 @@ d) 0,9619
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+c) 0,8746
+
+**Desarrollo:**
+
+Primero calculamos la probabilidad de que una caja sea rechazada. Para esto primero calculamos la probabilidad de que no sea rechazada:
+$$
+P(\text{no rexhazada}) = P(\text{primero bueno}) \cdot P(\text{segundo bueno}) = (1 - 0,04)\cdot (1 - 0,04) = 0,9216
+$$
+Por lo tanto la probabilidad de que sea rechazada es:
+$$
+P(\text{rechazada}) = 1 - 0,9216 = 0,0784
+$$
+
+Luego como nos estan preguntando por la probabilidad de que se rechazen a lo mas 1 caja. Es lo mismo a la probabilidad de que se rechazen 0 mas la de que se rechazen 1. Estas 2 probabilidades las podemos calcular con la distribucion Binomial.
+$$
+X ~ \text{Binomial}(n = 8, p = 0.0784)
+$$
+Donde $X$ Numero de cajas rechazadas entre las 8.
+
+En el HandBook esta la formula de la distribucion binomial por lo que calculamos:
+$$
+P(X= 0) = 0,5133 \quad P(X = 1) = 0,3480 \quad \text{entonces} \quad P(X \leq 1) = 0,5133 + 0,3480 = 0,8613
+$$
+
 </div>
 
-:::info 
+:::info
 Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
 un Pull Request en el [repositorio](https://github.com/crow-rojas/apuntes-fundamentals/pulls) de GitHub con el archivo
-`.mdx` correspondiente. 
+`.mdx` correspondiente.
 :::
 
 </MDXDetails>

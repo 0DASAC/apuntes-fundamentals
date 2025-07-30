@@ -31,7 +31,62 @@ d) $\mathrm{K}=9,18 \times 10^5$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+a) $K=1,3 \times 10^{42}$
+
+**Materia:**
+
+Si vamos a la pagina 86 del Handbook encontraremos la siguente formula.
+
+$$
+\Delta E = (E_2⁰ - E_1⁰) - \frac{RT}{nF}\cdot ln\left(\frac{M^{n+}_1}{M^{n+}_2} \right)
+$$
+con:
+- $E⁰_x$: El potencial de cel de celda de los elementos.
+- $R$: constante universal de los gases. (esta en el Handbook)
+- $n$: numero de electrones transferidos. (se puede calcular)
+- $T$: Temperatura en Kelvin.
+- $M⁰_x$: las concentraciones Molares de los iones.
+
+Pero asi como esta no se entiende mucho otra forma de interpretarlo es.
+$$
+\Delta E = (E_{\text{(se reduce)}} - E_{\text{(se oxida)}}) - \frac{RT}{nF}\cdot ln\left( Q \right)
+$$
+donde:
+- $Q$: cociente de la reaccion.
+
+Ademas debemos saber que cuando la reaccion esta en el equilibrio:
+
+- $Q = K$
+- $\Delta E = 0$ ya que no hay paso de electrones.
+
+**Desarrollo:**
+
+El ultimo dato que nos falta es la cantidad de electrones que se tranfieren esto se hace calculando los estados de oxidacion de alguno de los dos elementos por ejmplo el $Fe$ pasa de 0 a 2 por lo que cede dos electrons. Y como no esta acompañado de ningun coeficiente entonces la cantidad de electrones transferidos es $(n=2)$
+
+Como estamos en el equilibrio, si despejamos K de la ecuacion nos queda lo siguente.
+
+$$
+0 = (0,7996 - (-0,447)) - \frac{RT}{nF}\cdot ln\left( K \right)
+$$
+
+$$
+ (0,7996 - (-0,447))\cdot \frac{nF}{RT} = ln\left( K \right)
+$$
+
+$$
+ (1,2466)\cdot \frac{2\cdot 96485}{8,314\cdot 298,15} = ln\left( K \right)
+$$
+
+
+$$
+ 97,033 = ln\left( K \right) \quad \text{entonces} \quad e^{97,033} = K = 1.3 \cdot 10^{42}
+$$
+
+
+
 </div>
 
 :::info

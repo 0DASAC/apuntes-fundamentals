@@ -26,7 +26,43 @@ d) $A B(B A)^T$ siempre es simétrica.
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+d) $A B(B A)^T$ siempre es simétrica.
+
+**Propiedades:**
+
+- Una matriz $M$ es simetrica si: $M^T = M$
+- Transpuesta de la suma:
+$$
+(A+B)^T =A^T+B^T
+\quad
+(A−B)^T=A^T−B^T
+$$
+- Traspuesta del producto:
+$$
+(AB)^T=B^TA^T
+$$
+- Transpuesta doble:
+$$
+(A^T)^T=A
+$$
+
+**Desarroyo:**
+
+Para cada alternativa tenemos que verificar si $M^T = M$.
+
+a) $(A+B)^T = A^T+B^T$ como $A$ y $B$ simetricas $A^T+B^T = A+B$  **ES SIMETRICA**
+
+b) $(A A^T)^T = A^T(A^T)^T = A^TA$ como $A$ es simetrica $A^T = A$ entonces $A^TA = AA^T$$ **ES SIMETRICA**
+
+c) $(A-B^T)^T =A^T-(B^T)^T = A^T-B$ como $A,B$ son simetricas $A^T-B = A-B^T$ **ES SIMETRICA**
+
+Aqui ya por descarte es d) pero el desrroyo es el siguente:
+
+d) $(A B(B A)^T)^T = (A B(A^T B^T))^T = (A B(A B))^T = ((A B)²)^T$ aqui no podemos decir que (A B)² sea simetrica.
+
 </div>
 
 :::info

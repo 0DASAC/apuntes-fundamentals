@@ -40,7 +40,74 @@ d) no existe valor de $b$ que cumpla con lo solicitado.
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+**Respuesta:**
+
+c) $b=5 / 2$
+
+**Desarroyo:**
+
+Para que un plano y una recta cumplan que su interseccion sea vacia se deben cumplir dos condiciones:
+
+- Que sean paralelas entre si.
+- Que la recta no este contenida en el plano. (que no tenga ningun punto en el plano)
+
+Lo mas rapido de probar para descartar rapido si se puede hacer o no es ver si algun punto de la recta pertenece al plano. Como es para cualquier punto de la recta por combeniencia probamos el que nos dieron $ P_0 = (1,1,-2)$
+$$
+(1)−2(1)+3(-2)=-7\neq 12
+$$
+Como el punto no pertenece al plano podemos saber por lo menos que la recta no esta contenida en el plano.
+
+Ahora para ver si una recta es paralela a un plano usamos las siguentes propiedads.
+
+- Sea $\vec{N}$ la normal del plano y $\vec{d}$ el director de una recta, $\vec{N} \cdot \vec{d} = 0$ si y solo si $\vec{N} \bot \vec{d}$ si y solo si El plano y la recta son paralelos.
+- Para todo plano en la forma $ax + by + cy + d = 0$ el vector normal al plano es $(a, b, c)$.
+- Para toda recta en la forma $(x_0, y_0, z_0) + t(a, b, c)$ su vector director es $(a,b,c)$
+
+Si calculamos el producto punto de el vector normal y dirctor tenemos que:
+$$
+(1\ -2\ \ 3) \cdot
+\left(\begin{array}{l}
+2 \\
+b \\
+1
+\end{array}\right)
+= 5 - 2b
+$$
+
+Como nos piden el b para el cual son paralelos igualamos a cero y despejamos b.
+$$
+b = \frac{5}{2}
+$$
+
+Como se cumplen las dos condiciones entonces la interceccion es vacia.
+
+
+**Desarroyo(largo):**
+
+Para encontrar todos los puntos en los que se intersectan debemos resolver el sistema de ecuaciones.
+
+Primero separamos la ecuacion **parametrica** de la recta en sus 3 componetes.
+$$
+x(t)=1+2t,\quad y(t)=1+bt,\quad z(t)=−2+t
+$$
+Luego remplasamos $x, y, z$ en la ecuacion del plano.
+$$
+x(t)−2y(t)+3z(t)=12
+$$
+
+$$
+(1+2t)−2(1+bt)+3(−2+t)=12
+$$
+
+Despejando $t$ nos queda que.
+$$
+t= \frac{19}{5-2b}
+$$
+Por lo tanto el sistema tiene solucion si $5-2b\neq 0$, para que el conjunto sea vacio nosotros queremos que no tenga solucion por lo que
+debemos buscar el $b$ que hace 0 la ecuacion.
+$$
+5-2b = 0 \longrightarrow b = \frac{5}{2}
+$$
 </div>
 
 :::info

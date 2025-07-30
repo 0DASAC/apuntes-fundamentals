@@ -45,7 +45,50 @@ d) $D$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+c) $C$
+
+**Propiedades:**
+
+Operaciones fila elementales:
+
+1. Intercambiar dos filas.
+
+2. Multiplicar una fila por un escalar no nulo.
+
+3. Sumar a una fila un múltiplo de otra fila.
+
+
+
+Una matriz cuadrada $A$ es equivalente en operaciones fila a $I$ si se cumplen las siguentes condiciones.
+
+- $det(A) \neq 0$
+- Las filas de $A$ son linealmente independientes.
+- Las columnas de $A$ son linealmente independientes.
+- $A$ es invertible.
+
+Notece que si no se cumple una de estas, las demas tambien son falsas. **(Esto esta en el Handbook p58)**
+
+
+**Desarroyo:**
+
+Lo primero es ver si al ojo hay filas o columnas que de alguna matriz se parecen. a simple vista las que mas cumplen esto son la $C, D$.
+
+Para la matriz $C$ notece que si tomamos la priera fila y se la restamos a la segunda, y ademas tomamos la primera fila y se la restamos dos veces a la tercera nos queda la siguente matriz.
+
+$$
+C=
+\left[\begin{array}{ccc}
+1 & 2 & 3 \\\
+1 & 1 & 1 \\\
+1 & 1 & 1
+\end{array}\right]
+$$
+Ahora podemos ver claremente que las dos ultimas filas no son Linealmente Independientes por lo tanto no se puede llevar a la matriz $C$ a la identidad con operaciones fila elementales.
+
+Para el resto de las matrices podriamos haber intentado lo mismo o calculado el determinante y ver si era 0 o no.
 </div>
 
 :::info

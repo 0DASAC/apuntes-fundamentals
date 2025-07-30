@@ -27,13 +27,46 @@ d) 0,5497
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+a) 0,1471
+
+**Propiedades:**
+
+Si vamos al HandBook pagina 65 tenemos el teorema de Bayes, que dice lo siguente:
+$$
+P(B_j|A) = \frac{P(B_j) P(A|B_j))}{\sum^n_{i=1} P(A|B_i)\cdot P(B_i)}
+$$
+donde:
+- $P(B_j)$ es la probabilidad del evento $B_j$ de la poblacion $B$.
+
+**Desarrollo:**
+
+Definamos los siguientes eventos:
+- $\neg P$: Un auto **no** tiene la rueda pinchada.
+- $B_1$: El auto solo usa caminos asfaltados.
+- $B_2$: El auto usa caminos de tierra.
+
+Por lo que lo que nos preguntan es:
+$$
+P(B_2 | \neg P) = \frac{P(B_2)P(\neg P| B_2)}{P(\neg P | B_1)P(B_1) + P(\neg P | B_2) P(B_2)}
+$$
+
+Ahora notece que nos dan las siguentes probabilidades:
+- $P(B_1) = 0.83$
+- $P(B_2) = 0.17$
+- $P(\neg P | B_1) = 0,95$ \[ Probabilidad de que no pinche rueda si solo ocupa caminos asfaltados \]
+- $P(\neg P | B_2) = 0,8$ \[ Probabilidad de que no pinche rueda si ocupa caminos de tierra \]
+
+Por lo que tenemos todos los datos para calcular la probabilidad que nos piden.
+
 </div>
 
-:::info 
+:::info
 Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
 un Pull Request en el [repositorio](https://github.com/crow-rojas/apuntes-fundamentals/pulls) de GitHub con el archivo
-`.mdx` correspondiente. 
+`.mdx` correspondiente.
 :::
 
 </MDXDetails>

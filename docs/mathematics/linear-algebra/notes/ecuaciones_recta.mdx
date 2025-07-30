@@ -1,0 +1,198 @@
+# Rectas y Planos
+
+Este resumen reúne las distintas formas de representar **rectas** y **planos** en el espacio tridimensional, así como las propiedades clave de los **vectores normales** y **vectores directores**.
+
+---
+
+## Parte I — Rectas en $\mathbb{R}^3$
+
+### Ejemplo base
+
+Sean los puntos:
+
+- $A = (1, 1, 2)$
+- $B = (0, -1, 3)$
+
+Entonces el vector director de la recta es:
+
+$$
+\vec{d} = \vec{B} - \vec{A} = (-1, -2, 1)
+$$
+
+---
+
+### 1. Ecuación vectorial
+
+La forma general es:
+
+$$
+\vec{r}(t) = \vec{p}_0 + t \cdot \vec{d}
+$$
+
+- $\vec{p}_0$: un punto por donde pasa la recta.
+- $\vec{d}$: vector director.
+- $t$: parámetro real.
+
+**Ejemplo con $A = (1, 1, 2)$ y $\vec{d} = (-1, -2, 1)$:**
+
+$$
+\vec{r}(t) = (1, 1, 2) + t \cdot (-1, -2, 1)
+$$
+
+> El punto y el vector se identifican directamente en la expresión.
+
+---
+
+### 2. Ecuación paramétrica
+
+Se obtiene separando cada componente de la ecuación vectorial:
+
+$$
+x(t) = 1 - t \\
+y(t) = 1 - 2t \\
+z(t) = 2 + t
+$$
+
+¿Cómo identificar los elementos?
+
+- **Vector director**: los coeficientes de $t$: $\vec{d} = (-1, -2, 1)$
+- **Punto sobre la recta**: los valores constantes: $\vec{p}_0 = (1, 1, 2)$
+
+---
+
+### 3. Ecuación simétrica
+
+Se despeja $t$ en cada ecuación paramétrica y se igualan:
+
+$$
+\frac{x - 1}{-1} = \frac{y - 1}{-2} = \frac{z - 2}{1}
+$$
+
+¿Cómo identificar los elementos?
+
+- **Vector director**: aparece en los denominadores: $\vec{d} = (-1, -2, 1)$
+- **Punto sobre la recta**: aparece en los numeradores: $\vec{p}_0 = (1, 1, 2)$
+
+> Esta forma no se puede usar si alguna componente del vector director es cero.
+
+---
+
+### 4. Intersección de planos
+
+Una recta también puede definirse como la intersección de dos planos:
+
+$$
+\begin{cases}
+- x + 3y - z = -4 \\
+2x - y + 3z = 10
+\end{cases}
+$$
+
+- Los vectores normales de los planos son:
+  - $\vec{n}_1 = (-1, 3, -1)$
+  - $\vec{n}_2 = (2, -1, 3)$
+
+El **vector director de la recta** es el producto cruzado:
+
+$$
+\vec{d} = \vec{n}_1 \times \vec{n}_2
+$$
+
+> El vector director se obtiene cruzando los vectores normales. Para obtener un punto sobre la recta, se resuelve el sistema.
+
+---
+
+## Parte II — Planos en $\mathbb{R}^3$
+
+### 1. Ecuación general del plano
+
+Forma vectorial:
+
+$$
+a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
+$$
+
+- $(x_0, y_0, z_0)$: punto del plano.
+- $(a, b, c)$: vector normal al plano.
+
+**Ejemplo:**
+
+Si el plano pasa por $(2, 0, 1)$ y tiene vector normal $(1, 2, -1)$:
+
+$$
+1(x - 2) + 2(y - 0) - 1(z - 1) = 0
+$$
+
+---
+
+### 2. Ecuación cartesiana (forma implícita)
+
+Es la forma expandida:
+
+$$
+ax + by + cz = d
+$$
+
+- El vector normal es $(a, b, c)$.
+- El plano pasa por un punto $(x_0, y_0, z_0)$ tal que $d = ax_0 + by_0 + cz_0$.
+
+**Ejemplo (continuación):**
+
+Expandimos:
+
+$$
+x + 2y - z = 1
+$$
+
+¿Cómo identificar los elementos?
+
+- **Vector normal**: $(1, 2, -1)$
+- **Punto sobre el plano**: uno que satisfaga la ecuación, por ejemplo $(2, 0, 1)$
+
+> Si se desconoce un punto, se puede buscar uno resolviendo la ecuación con dos coordenadas arbitrarias.
+
+---
+
+## Parte III — Propiedades de vectores normales y directores
+
+### Vector normal de un plano
+
+- Es perpendicular a cualquier vector contenido en el plano.
+- Si $\vec{n}$ es el vector normal y $\vec{v}$ un vector contenido en el plano, entonces:
+
+$$
+\vec{n} \cdot \vec{v} = 0
+$$
+
+- También se puede obtener como producto cruzado de dos vectores del plano:
+
+$$
+\vec{n} = \vec{v}_1 \times \vec{v}_2
+$$
+
+---
+
+### Vector director de una recta
+
+- Define la dirección de la recta.
+- Se puede obtener:
+  - A partir de dos puntos de la recta: $\vec{d} = \vec{B} - \vec{A}$
+  - Desde las ecuaciones paramétricas o simétricas.
+  - Como producto cruzado de normales si la recta es intersección de planos.
+
+---
+
+## Comparación final
+
+| Representación | Vector | Punto sobre la recta/plano | Observaciones |
+|----------------|--------|-----------------------------|----------------|
+| Vectorial (recta) | $\vec{d}$ explícito | $\vec{p}_0$ explícito | Muy útil para graficar o recorrer |
+| Paramétrica (recta) | Coeficientes de $t$ | Términos constantes | Descompuesta por coordenadas |
+| Simétrica (recta) | Denominadores | Numeradores | Solo si $\vec{d} \ne 0$ en todas las componentes |
+| Intersección (recta) | Producto cruz de normales | Solución del sistema | Útil en geometría analítica |
+| General (plano) | Coeficientes de $x,y,z$ | $(x_0, y_0, z_0)$ en la ecuación | Forma vectorial |
+| Cartesiana (plano) | Coeficientes de $x,y,z$ | Cualquier punto que satisface la ecuación | Más compacta |
+
+---
+
+¿Quieres agregar ejercicios o gráficos visuales para acompañar este resumen?

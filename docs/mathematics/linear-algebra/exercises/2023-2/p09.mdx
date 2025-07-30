@@ -34,7 +34,22 @@ d) Todas
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+c) Solo I y II
+
+**Desarroyo:**
+
+Las primeras dos podemos demostrar que son falsas por contraejemplo.
+
+**I.** Sea $B$ la matriz 0. notece que esta matriz no es invertible. Pero $(A + B) = A$ y $A$ invertible por lo que hay un ejemplo de $B$ no invertible que no rompe que $A, A+B$ sean invertibles.
+
+**II.** Sea $B$ la matriz 0, entonces $BA^{-1} = [0] = B$ osea es no invertible pero no rompe las propiedades.
+
+Para la III intentaremos hacer aparecer $A+B$.
+
+**III.** $I + BA^{-1} = A A^{-1} + BA^{-1} = (A + B)A^{-1}$ y por propiedades sabemos que la multiplicacion de matrices invertibles es invertible.
 </div>
 
 :::info

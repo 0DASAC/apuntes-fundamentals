@@ -26,7 +26,48 @@ d) $C^{-1}=I_n-N+N^2-N^3+\cdots+(-1)^{2 n-1} N^{2 n-1}$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+
+b) $C^{-1}=I_n-N+N^2-N^3+\cdots+(-1)^{n-1} N^{n-1}$
+
+**Desarroyo_1:**
+
+Una comprobacion rapida para ver si es el inverso de $C$ es multiplicar $CC^{-1}$ y comprobar si da la identidad. $(C = N - I_n)$
+
+a) $(N + I_n) \cdot (I_n - N) = N I_n -NN + I_n I_n - I_n N = I_n - N²$
+
+Notece que eso solo es cierto para $n=2$ ya que en ese caso $N² = 0$, por lo que esta es falsa. Para el resto de alternativas no podemos hacer lo mismo porque son con un numero arbitrario de elementos, pero como la propiedad se cumple para todo $n$ tomemos un $n=2$
+
+b) Para $n=2$ esta se transforma en $C^{-1} = I_n - N$ que es igual al caso de a) y ya demostramos que se cumple que $CC^{-1} = I_n$ para este caso.
+por lo que esta alternativa es candidata pero todavia puede ser falsa.
+
+c) Para $n=2$ esta se transforma en $C^{-1} = I_n + N$ entonces $CC^{-1}= (N + I_n) \cdot (I_n + N) = N + N^2 + I_n + N = I_n + 2 N + N²$ notece
+que esto no es necesariamente igual a la identidad por lo tanto esta es falsa.
+
+d) Para $n=2$ esta se transforma en $C^{-1} = (N + I_n) \cdot (I_n - N + N^2 - N^3) = (I_n + N^4)$ Notece que no necesariamente es cierto que esto sea igual a la identidad por lo tanto esta tambien es falsa.
+
+Por descarte entonces la correcta es la b).
+
+**Desarroyo_2:**
+
+Para este desarroyo usaremos la propiedad de que dice que:
+$$
+N^n + I_n = (N + I_n) \cdot (I_n - N + N^2 - ... + (-1)^{n-1})N^{n-1})
+$$
+
+Si nos fijamos en la forma de b) podemos ver que:
+$$
+(N + I_n) \cdot (I_n - N + N^2 - ... + (-1)^{n-1})N^{n-1}) = CC^{-1} = N^n + I_n
+$$
+Pero ademas sabemos que $N^n$ es la matriz cero entonces:
+$$
+CC^{-1} = N^n + I_n = I_n
+$$
+
+Por lo tanto la b) es la correcta.
+
 </div>
 
 :::info
