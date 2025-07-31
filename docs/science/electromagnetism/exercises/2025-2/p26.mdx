@@ -29,7 +29,41 @@ d) Es variable y proporcional a $𝐼_0 𝐿_𝑐 cos(𝜔𝑡)$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+d) Es variable y proporcional a $𝐼_0 𝐿_𝑐 cos(𝜔𝑡)$
+
+**Desarrollo:**
+
+Nos estan preguntando por el $v(t)$ de la bobina, y si vamos al handbook encontraremos la siguente formula:
+$$
+v_L(t) = L\cdot \frac{di_L}{dt}
+$$
+Pero en esta forma la ecuacion solo sirver para confundir ya que asume que $L$ constante. Pero en general la formula es:
+$$
+v(t) = \frac{d}{dt}[L(t)\cdot i(t)]
+$$
+Si partimos de esta ecuacion podemos sacar la corriente para afuera ya que es constante:
+$$
+v(t) =I\cdot \frac{d}{dt}[L(t) ]
+$$
+Ahora necesitamos una ecuacion para $L(t)$ pero del handbook podemos ver que:
+$$
+L = \frac{NA}{l}\cdot \mu
+$$
+Notece que es $\mu$ por una consante y ademas sabemos que $L(t = 0) = L_c$ por lo que podemos despejar:
+$$
+L(t) = L_c\cdot (1+sin(wt))
+$$
+si derivamos con respecto a te y luego remplasamos obtenemos:
+$$
+v(t) = I\cdot L_c\cdot w\cdot cos(wt)
+$$
+En conclucion es variable, porque esta en funcion de $t$ y proporcinal a $I\cdot L_c\cdot cos(wt)$ porque esta multiplicado por $w$.
+
+
+
 </div>
 
 :::info

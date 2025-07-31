@@ -24,7 +24,34 @@ d) $20 \%$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+c) $80 \%$
+
+**Desarrollo:**
+
+Nos etan preguntando por la eficiencia $\eta$ pero el coeficiente que nos dan es el de una maquina refrigenrante por lo que:
+$$
+COP = \frac{Q_L}{W} = \frac{T_L}{T_H-T_L}
+$$
+La ultima igualdad no esta en el handbook pero es la misma que para la bomba de calor pero cambiando el numerador de $T_H$ a $T_L$. Y sabemos que la eficiencia de un motor termico es:
+$$
+\eta = \frac{T_H-T_L}{T_H} = \left(1 - \frac{T_L}{T_H} \right)
+$$
+Lo que queremos hacer ahora es encontrar $T_L/T_H$ para eso explandimos la primera ecuacion.
+
+$$
+0,25 = \frac{T_L}{T_H-T_L} \quad \rightarrow \quad 0,25\cdot T_H - 0,25\cdot T_L = T_L \quad \rightarrow \quad 0,25\cdot T_H = T_L(1 + 0,25)
+$$
+$$
+\frac{T_L}{T_H} = \frac{0,25}{1,25} = 0,2
+$$
+
+Remplasamos este valor en la formula de eficiencia y tenemos:
+$$
+\eta = 1 - 0,2 = 0,8
+$$
 </div>
 
 :::info

@@ -18,7 +18,7 @@ a) $10,72 \mathrm{~kg} / \mathrm{s}$
 b) $2,92 \mathrm{~kg} / \mathrm{s}$
 
 c) $42,88 \mathrm{~kg} / \mathrm{s}$
- 
+
 d) $0,73 \mathrm{~kg} / \mathrm{s}$
 </div>
 
@@ -26,8 +26,49 @@ d) $0,73 \mathrm{~kg} / \mathrm{s}$
 <summary>Solución propuesta</summary>
 
 <div className="exercise">
-Aún no hay solución propuesta 🥲
+
+**Respuesta:**
+
+d) $0,73 \mathrm{~kg} / \mathrm{s}$
+
+**Desarrollo:**
+
+Nos estan preguntando por el flujo masico que se define como:
+$$
+\dot{m} = \rho \cdot A \cdot v
+$$
+Donde:
+- $\rho$: la densidad.
+- $A$: El area de la seccion transversal.
+- $v$: La velosidad.
+
+
+Para calcular la densidad usamos la ecuacion de los gases ideales:
+
+$$
+P\nu = RT \quad \rightarrow \quad \nu = \frac{RT}{P} = \frac{287\cdot 293,15}{200000}
+$$
+
+Pero ademas sabemos que el volumen especifico es el inverso de la densidad, entonces:
+
+$$
+\rho = \frac{1}{\nu} = \frac{200000}{287\cdot 293,15} = 2,38
+$$
+
+:::caution
+Hay que tener cuidado con las unidades de medida ya que la formula usa Kelvins y la presion esta en kilopascales.
+:::
+
+Ahora el area es:
+$$
+\pi \cdot r^2 = \pi \cdot \left(\frac{14}{100} \right)² = 0,0615
+$$
+
+Finalmente remplasamos todos los valores en la ecuacion y obtenemos $\dot{m}$.
+
 </div>
+
+
 
 :::info
 Si este ejercicio tiene una solución, podría estar incorrecta. Si deseas proponer una solución alternativa, manda tu solución abriendo
